@@ -12,22 +12,22 @@ Belajar Promp
 <script>
 
     function konfirmasi() {
-        var nama = prompt("Masukan Nama : ") ;
-        var tanya = confirm("Apakah Ini Benar Nama anda " + nama + " ?");
+        var i;
+        for (i = 0 ; i<5 ; i ++) {
 
-        var text ;
+            var nama = prompt("Masukan Nama : ");
+            var tanya = confirm("Apakah Ini Benar Nama anda " + nama + " ?");
 
-        if (tanya){
-            alert("Selamat datang " + nama);
-        }
-        else{
-            tanya = prompt("Masukan Nama Lagi : ");
-            if (tanya != null){
-                alert("Nama Anda Adalah " + tanya );
+            var text;
+
+            if (tanya) {
+                alert("Selamat datang " + nama);
+            } else {
+                i++;
             }
         }
+            document.getElementById("text").innerHTML = text;
 
-        document.getElementById("text").innerHTML = text ;
     }
 
 </script>
