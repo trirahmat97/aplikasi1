@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Belajar Alert Prompt dan Confirm</title>
+    <title>Belajar Github Desktop</title>
 </head>
 <body>
+Belajar Promp
+<button onclick="konfirmasi()" >Masukan Nama Anda</button>
+<p id="id"></p>
 
-<script src="dewa.js"></script>
+<script>
+
+    function konfirmasi() {
+        var nama = prompt("Masukan Nama : ") ;
+        var tanya = confirm("Apakah Ini Benar Nama anda " + nama + " ?");
+
+        var text ;
+
+        if (tanya){
+            alert("Selamat datang " + nama);
+        }
+        else{
+            tanya = prompt("Masukan Nama Lagi : ");
+            if (tanya != null){
+                alert("Nama Anda Adalah " + tanya );
+            }
+        }
+
+        document.getElementById("text").innerHTML = text ;
+    }
+
+</script>
 </body>
 </html>
