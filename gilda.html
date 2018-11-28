@@ -6,23 +6,19 @@
 </head>
 <body>
 Latihan Javascript
-<button onclick="konfirmasi()"> Konfirmasi Nama </button>
-<p id="text"></p>
 <script>
-    function konfirmasi(){
-var nama = prompt("Masukkan Nama : ");
-var tanya = confirm("Apakah Benar Nama Anda " + nama + " ? ");
-var text = "";
+    alert('Hallo Selamat Datang');
 
-if (tanya == true){
-   text = "Selamat Datang "+nama;
+var tes = true;
+
+while (tes === true) {
+    var nama = prompt('masukkan nama anda :');
+    alert('halo ' + nama);
+
+    tes = confirm('coba lagi?');
 }
-else {
-    tanya = prompt("Masukkan Nama : ");
-    if
-}
-document.getElementById("text").innerHTML = text;
-}
+
+alert('terimakasih..');
 </script>
 </body>
 </html>
