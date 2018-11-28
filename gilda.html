@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>
+        Javascript
+    </title>
+</head>
+<body>
+Latihan Javascript
+<button onclick="konfirmasi()"> Konfirmasi Nama </button>
+<p id="text"></p>
+<script>
+    function konfirmasi(){
+var nama = prompt("Masukkan Nama : ");
+var tanya = confirm("Apakah Benar Nama Anda " + nama + " ? ");
+var text = "";
+
+if (tanya == true){
+   text = "Selamat Datang "+nama;
+}
+else {
+    tanya = prompt("Masukkan Nama : ");
+    if
+}
+document.getElementById("text").innerHTML = text;
+}
+</script>
+</body>
+</html>
